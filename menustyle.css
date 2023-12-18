@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+/* nav bar start */
+
+/* nav bar start */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    padding: 0 100px;
+    margin-top: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: antiquewhite;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    background: #84735E;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: antiquewhite;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, :active{
+       background: none;
+       color: #885a3a;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+/* nav bar end */
+
+/* Menu Section Start */
+.card{
+    margin-top: 30px;
+}
+.card{
+    background-color: rgb(34, 33, 33);
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+.pastry{
+    margin-top: 30px;
+    font-size: 30px;
+    
+}
+.heading3{
+    margin-top: 30px;
+    font-size: 30px;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+
+/* Menu Section End */
+/* footer start */
+#footer{
+    width: 100%;
+    background-color: #84735E;
+    margin-top: 0;
+}
+.footer-logo img{
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+}
+.social-links i{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black ;  
+}
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#credit a span{
+    color: black;
+}
+.copyright span{
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+/* footer end */
